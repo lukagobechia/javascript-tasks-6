@@ -16,8 +16,10 @@ async function fetchData(url) {
     } catch (e) {
       console.log("error retrieving data");
       await sleep(2000);
-      if (i == 4)
-        console.log("we tried retrieving data 5 times. Could not retrieved Users data");
+      if (i == 4){
+          console.log("\nwe tried retrieving data 5 times. Could not retrieved Users data\n");
+          console.log('Error message:\n', e.message)
+      }
     }
   }
 }
