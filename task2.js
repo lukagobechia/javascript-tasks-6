@@ -6,9 +6,6 @@ function fetchData(url) {
       .then((data) => {
         res(data);
       })
-      .then((resp) => {
-        res(data);
-      })
       .catch((e) => rej(e));
   });
 }
